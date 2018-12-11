@@ -295,7 +295,7 @@ def broken_5(circle, window):
 
 
 # -----------------------------------------------------------------------------
-# TODO: 8. Follow the INSTRUCTIONS AT THE TOP OF THIS MODULE
+# DONE: 8. Follow the INSTRUCTIONS AT THE TOP OF THIS MODULE
 #          to correct the mistake(s) in the following function.
 # -----------------------------------------------------------------------------
 def broken_6(n):
@@ -306,8 +306,8 @@ def broken_6(n):
     Side effects:   None.
     """
     total = 0
-    for k in range(n + 1):
-        total = total + 1 / k
+    for k in range(n):
+        total = total + 1 / (k+1)
 
     return total
 
@@ -348,7 +348,7 @@ def broken_7(n, point, length, distance_between_lines, window):
         window.render(0.5)
         left = rg.Point(left.x, left.y + distance_between_lines)
         right = rg.Point(right.x, right.y + distance_between_lines)
-    window.close_on_mouse_click()
+
 
 
 # -----------------------------------------------------------------------------
